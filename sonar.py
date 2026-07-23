@@ -18,7 +18,8 @@ def setup_credentials():
     print("These will be stored in .sonar_credentials.json (gitignored).")
     print("-" * 50)
     
-    pat = input("GitHub Personal Access Token (PAT): ").strip()
+    push_pat = input("GitHub Push Token (PAT for secondary/push account): ").strip()
+    sync_pat = input("GitHub Sync Token (PAT with issue write access to dchumari/sonar): ").strip()
     author_name = input("Default Git Author Name (e.g., Marc Barber): ").strip()
     author_email = input("Default Git Author Email (e.g., marcbarber@cc.cc): ").strip()
     
@@ -28,7 +29,8 @@ def setup_credentials():
         dest_parent = default_dest
 
     config = {
-        "github_pat": pat,
+        "github_push_pat": push_pat,
+        "github_sync_pat": sync_pat,
         "author_name": author_name,
         "author_email": author_email,
         "dest_parent": dest_parent
@@ -261,18 +263,21 @@ def main():
         sys.exit(res.returncode)
 
     # 5. Ask to push to private GitHub repo
-    username = get_github_username(creds["github_pat"])
+    push_pat = creds.get("github_push_pat") or creds.get("github_pat")
+    sync_pat = creds.get("github_sync_pat") or creds.get("github_pat")
+    
+    username = get_github_username(push_pat)
     pushed_url = None
     
     push_choice = input(f"\nDo you want to push '{project_name}' to a private GitHub repo? (y/n): ").strip().lower()
     if push_choice in ("y", "yes"):
-        pushed_url = create_and_push_github(dest_dir, project_name, creds["github_pat"])
+        pushed_url = create_and_push_github(dest_dir, project_name, push_pat)
         if not pushed_url:
             print("[!] Warning: Repository could not be pushed to GitHub.")
     
     # 6. Submit issue update to synchronize the database
     submit_sync_issue(
-        pat=creds["github_pat"],
+        pat=sync_pat,
         codeberg_url=check_url,
         project_name=project_name,
         pushed_url=pushed_url,
