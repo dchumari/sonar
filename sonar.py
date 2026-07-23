@@ -198,6 +198,61 @@ def submit_sync_issue(pat, codeberg_url, project_name, pushed_url, username):
     except Exception as e:
         print(f"[-] Failed to submit sync issue: {e}")
 
+def sanitize_and_rewrite_readmes(dest_dir, project_name):
+    print("[*] Sanitizing and rewriting README documentation...")
+    if not os.path.exists(dest_dir):
+        return
+        
+    for item in os.listdir(dest_dir):
+        if item.upper().startswith("README"):
+            file_path = os.path.join(dest_dir, item)
+            if not os.path.isfile(file_path):
+                continue
+                
+            ext = os.path.splitext(item)[1].lower()
+            
+            # Write generic template according to format
+            if ext in (".md", ".markdown"):
+                content = f"""# {project_name}
+
+Welcome to {project_name}. This repository contains a restructured and optimized codebase.
+
+## Overview
+This project has been restructured for deployment and development.
+
+## Setup & Usage
+Please check the build configurations (e.g., package files, build scripts, or meson configuration) in the root of the repository for setup instructions.
+"""
+            elif ext in (".adoc", ".asciidoc"):
+                content = f"""= {project_name}
+
+Welcome to {project_name}. This repository contains a restructured and optimized codebase.
+
+== Overview
+This project has been restructured for deployment and development.
+
+== Setup & Usage
+Please check the build configurations (e.g., package files, build scripts, or meson configuration) in the root of the repository for setup instructions.
+"""
+            else:
+                # Text/Default template
+                content = f"""=== {project_name} ===
+
+Welcome to {project_name}. This repository contains a restructured and optimized codebase.
+
+-- Overview --
+This project has been restructured for deployment and development.
+
+-- Setup & Usage --
+Please check the build configurations (e.g., package files, build scripts, or meson configuration) in the root of the repository for setup instructions.
+"""
+            try:
+                with open(file_path, "w", encoding="utf-8") as f:
+                    f.write(content)
+                print(f"[+] Successfully sanitized and rewrote README: {item}")
+            except Exception as e:
+                print(f"[!] Warning: Failed to rewrite README {item}: {e}")
+
 def main():
     parser = argparse.ArgumentParser(description="Sonar Unified Restructuring CLI Orchestrator")
     parser.add_argument("--src", required=True, help="Path to source codebase to restructure")
@@ -261,6 +316,9 @@ def main():
     if res.returncode != 0:
         print("[-] Restructuring failed. Halting pipeline.")
         sys.exit(res.returncode)
+
+    # 4.5 Sanitize and rewrite README documents
+    sanitize_and_rewrite_readmes(dest_dir, project_name)
 
     # 5. Ask to push to private GitHub repo
     push_pat = creds.get("github_push_pat") or creds.get("github_pat")

@@ -15,4 +15,6 @@ When modifying or maintaining the restructuring CLI framework, ensure all compon
 - **Orchestration Separation**: Maintain a strict separation between the orchestrator (`sonar.py`) and the restructurer scripts. Do not introduce credentials, API requests, or networking code into the `scripts/restructure_project.py` files.
 - **Git Safety**: Never push credentials to any repository. Ensure `.sonar_credentials.json` remains strictly gitignored.
 - **Database Consistency**: Any modification to `db/processed_repos.json` or sync logic must preserve compatibility with the GitHub Action workflow (`.github/workflows/sync_db.yml`).
+- **README Untraceability**: Always completely rewrite README documentation files (e.g. `README.md`, `README.adoc`, `README.txt`, `README`) in the restructured destination folder with a clean, neutral template referencing only the new project name, and completely stripping original author/repo links to ensure maximum privacy and untraceability.
+
 
