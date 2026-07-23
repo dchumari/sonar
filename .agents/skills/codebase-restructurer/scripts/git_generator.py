@@ -73,10 +73,23 @@ def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, aut
     # Staging batches
     chunk_size = max(1, len(file_list) // 10)
     batches = [file_list[i:i + chunk_size] for i in range(0, len(file_list), chunk_size)]
+    num_commits = len(batches)
+
+    # Precalculate clustered timestamps (clustered towards the end)
+    total_duration = end_date - start_date
+    p = 2.0  # Power law for accelerating intervals
+    commit_dates = []
+    
+    for i in range(num_commits):
+        pos = 1.0 - ((num_commits - 1 - i) / max(1, num_commits - 1)) ** p
+        if 0 < i < num_commits - 1:
+            pos += random.uniform(-0.03, 0.03)
+        commit_dates.append(start_date + total_duration * pos)
+        
+    commit_dates.sort()
 
     for idx, batch in enumerate(batches):
-        if current_date >= end_date:
-            break
+        current_date = commit_dates[idx]
 
         # Stage files in this batch all at once to avoid index.lock issues
         if batch:
@@ -120,8 +133,4 @@ def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, aut
         # Commit subprocess invocation using custom env
         run_git_cmd(["commit", "-m", msg], cwd=target_dir, env=env)
 
-        # Increment date
-        days_to_add = random.uniform(commit_freq_days * 0.5, commit_freq_days * 1.5)
-        current_date += timedelta(days=days_to_add)
-
-    print(f"Synthesized history from {start_date_str} to {current_date.isoformat()}")
+    print(f"Synthesized history from {start_date_str} to {commit_dates[-1].isoformat()}")
