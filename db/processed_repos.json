@@ -22,13 +22,5 @@
         "status": "processed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-23T23:02:03.630341Z"
-    },
-    {
-        "codeberg_url": "https://codeberg.org/freeipa/freeipa.git",
-        "restructured_name": "StormPulse",
-        "pushed_github_url": null,
-        "status": "processed",
-        "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-23T23:06:08.981867Z"
     }
 ]
