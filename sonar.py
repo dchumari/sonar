@@ -269,8 +269,8 @@ def main():
     username = get_github_username(push_pat)
     pushed_url = None
     
-    push_choice = input(f"\nDo you want to push '{project_name}' to a private GitHub repo? (y/n): ").strip().lower()
-    if push_choice in ("y", "yes"):
+    push_choice = input(f"\nDo you want to push '{project_name}' to a private GitHub repo? (y/n) [default: y]: ").strip().lower()
+    if push_choice in ("y", "yes", ""):
         pushed_url = create_and_push_github(dest_dir, project_name, push_pat)
         if not pushed_url:
             print("[!] Warning: Repository could not be pushed to GitHub.")
