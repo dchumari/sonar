@@ -7,6 +7,7 @@ import datetime
 import subprocess
 import urllib.request
 import urllib.parse
+import zipfile
 
 CREDENTIALS_FILE = ".sonar_credentials.json"
 DB_FILE = os.path.join("db", "processed_repos.json")
@@ -253,6 +254,22 @@ Please check the build configurations (e.g., package files, build scripts, or me
             except Exception as e:
                 print(f"[!] Warning: Failed to rewrite README {item}: {e}")
 
+def create_zip_archive(dest_dir, project_name, dest_parent):
+    zip_path = os.path.join(dest_parent, f"{project_name}.zip")
+    print(f"[*] Creating ZIP archive at {zip_path}...")
+    try:
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            for root, dirs, files in os.walk(dest_dir):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    arcname = os.path.relpath(file_path, start=dest_parent)
+                    zipf.write(file_path, arcname)
+        print(f"[+] ZIP archive successfully created: {zip_path}")
+        return zip_path
+    except Exception as e:
+        print(f"[!] Warning: Failed to create ZIP archive: {e}")
+        return None
+
 def main():
     parser = argparse.ArgumentParser(description="Sonar Unified Restructuring CLI Orchestrator")
     parser.add_argument("--src", required=True, help="Path to source codebase to restructure")
@@ -320,6 +337,9 @@ def main():
     # 4.5 Sanitize and rewrite README documents
     sanitize_and_rewrite_readmes(dest_dir, project_name)
 
+    # 4.6 Create ZIP archive of the restructured repo
+    create_zip_archive(dest_dir, project_name, dest_parent)
+
     # 5. Ask to push to private GitHub repo
     push_pat = creds.get("github_push_pat") or creds.get("github_pat")
     sync_pat = creds.get("github_sync_pat") or creds.get("github_pat")
@@ -327,7 +347,11 @@ def main():
     username = get_github_username(push_pat)
     pushed_url = None
     
-    push_choice = input(f"\nDo you want to push '{project_name}' to a private GitHub repo? (y/n) [default: y]: ").strip().lower()
+    try:
+        push_choice = input(f"\nDo you want to push '{project_name}' to a private GitHub repo? (y/n) [default: y]: ").strip().lower()
+    except EOFError:
+        push_choice = "y"
+        
     if push_choice in ("y", "yes", ""):
         pushed_url = create_and_push_github(dest_dir, project_name, push_pat)
         if not pushed_url:

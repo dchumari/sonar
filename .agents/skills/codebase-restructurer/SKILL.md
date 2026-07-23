@@ -66,8 +66,11 @@ The orchestrator `sonar.py` wraps the codebase restructurer to automate credenti
    Generates a random two-word identity (e.g., `AzureSpire`) and verifies it does not exist in `db/processed_repos.json` or local folders.
 4. **Restructuring Execution**:
    Spawns `restructure_project.py` with custom flags and templates.
-5. **Private Repo Push**:
+5. **ZIP Archival**:
+   Automatically archives the restructured directory into a `<project_name>.zip` file under the destination parent folder. This archive fully preserves the generated `.git/` history folder to allow manual uploads/pushes.
+6. **Private Repo Push**:
    Utilizes the GitHub API to create a private repository named after the generated project and pushes the mutated master branch.
-6. **Decentralized DB Synchronization**:
+7. **Decentralized DB Synchronization**:
    Uses the GitHub Issues API to submit a JSON payload as an issue with the label `db-update`. A GitHub Actions workflow (`sync_db.yml`) detects it, parses the payload, updates `db/processed_repos.json`, commits it back to the codebase, and closes the issue.
+
 
