@@ -1,0 +1,5 @@
+.sonar_credentials.json
+__pycache__/
+*.pyc
+scratch/
+.env

@@ -1,0 +1,44 @@
+{
+  "target_languages": ["python", "javascript"],
+  "transformations": {
+    "control_flow_mutation": true,
+    "structural_refactoring": true,
+    "dummy_code_insertion": true,
+    "control_flow_flattening": true,
+    "semantic_renaming": true,
+    "comment_sanitization": true,
+    "identifier_renaming": true
+  },
+  "exclusions": [
+    "node_modules",
+    "venv",
+    ".venv",
+    "dist",
+    "build",
+    "out",
+    ".git",
+    "__pycache__"
+  ],
+  "qualification": {
+    "min_loc": 2000,
+    "min_commits": 100,
+    "scan_secrets": true
+  },
+  "git_history": {
+    "start_date": "2021-01-01T09:00:00Z",
+    "end_date": "2026-07-23T10:00:00Z",
+    "commit_frequency_days": 2.5,
+    "authors": [
+      {
+        "name": "Marc Barber",
+        "email": "marcbarber@cc.cc/",
+        "weight": 0.7
+      },
+      {
+        "name": "Starn Bluey",
+        "email": "starnbluey@gmail.com",
+        "weight": 0.3
+      }
+    ]
+  }
+}

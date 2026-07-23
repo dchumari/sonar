@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "skills": {
+    "api-and-interface-design": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/api-and-interface-design/SKILL.md",
+      "computedHash": "0fabf9c3fc2577eab57833f660efef943b78d5c6ae5f0d8e82b600cc22563dbc"
+    },
+    "brainstorming": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/brainstorming/SKILL.md",
+      "computedHash": "296f19f94d8a8944533c3e03087de35613a17a08d8769dc48ff1e1f6db2a29fe"
+    },
+    "browser-testing-with-devtools": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/browser-testing-with-devtools/SKILL.md",
+      "computedHash": "abb28c4569e416f114d10190db6554e1977b6f512b1699d1760632b1a9ebba60"
+    },
+    "ci-cd-and-automation": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/ci-cd-and-automation/SKILL.md",
+      "computedHash": "f927700883a2b0f47d150d6ba27faf9006046641404480167d0b860564d11176"
+    },
+    "code-review-and-quality": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/code-review-and-quality/SKILL.md",
+      "computedHash": "3ed6020ba89fa9344013dc34d862a298c043c430639ca4785bc3dbea04d67183"
+    },
+    "code-simplification": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/code-simplification/SKILL.md",
+      "computedHash": "aa9393832e77d2a89d91a8004dfb9d32670f4dcb46f2fd873c1dcad53e1f1f61"
+    },
+    "context-engineering": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/context-engineering/SKILL.md",
+      "computedHash": "1296ce5de6ca27323e8ad6dba640744770bc868c8cf49d0934b484c553c80243"
+    },
+    "debug": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/debug/SKILL.md",
+      "computedHash": "16c35005c49594d9ae4ddc744f61863b8f6c0f965097ca6662808b5f23a0de6b"
+    },
+    "debugging-and-error-recovery": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/debugging-and-error-recovery/SKILL.md",
+      "computedHash": "46facf7328efeb51e32cb25835a83f4ec4e69b600c818a255e88645cfca1d0c4"
+    },
+    "deprecation-and-migration": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/deprecation-and-migration/SKILL.md",
+      "computedHash": "1f85baabf163a96834d9df65505af608313f7765e1576465fbaa300177e60539"
+    },
+    "dispatching-parallel-agents": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/dispatching-parallel-agents/SKILL.md",
+      "computedHash": "9af915fcf46b9f3de21018aaea3c3410ebee95e33cf5ec9b18ec7eb2b5ddcf18"
+    },
+    "documentation-and-adrs": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/documentation-and-adrs/SKILL.md",
+      "computedHash": "067c4b3208aea8811712f6598a5552cd35512163de82a5c23e1e4f70379cdbb8"
+    },
+    "docx": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/docx/SKILL.md",
+      "computedHash": "3b8f8cf1ca7a427607c78312655e95e21b5f8f2b06a1aad4dc5554cc90eb095c"
+    },
+    "doubt-driven-development": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/doubt-driven-development/SKILL.md",
+      "computedHash": "1595be2b80bb3ac1029431e8e63023cf1954b19106738480967fa93c2fe56a64"
+    },
+    "executing-plans": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/executing-plans/SKILL.md",
+      "computedHash": "c647caf8b7d15fa6bf39e291229f7549c6388cdc88455c4942a6306c795b44df"
+    },
+    "finishing-a-development-branch": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/finishing-a-development-branch/SKILL.md",
+      "computedHash": "5f73d97484f66c81d6740d98c94fe76bf0a2ff92d7d0745c6689ff43bc8e6a00"
+    },
+    "frontend-ui-engineering": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/frontend-ui-engineering/SKILL.md",
+      "computedHash": "5b853492d1ee7a6bff5c7637a10b42830feec974623c25532725ee5de84d5fc5"
+    },
+    "git-workflow-and-versioning": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/git-workflow-and-versioning/SKILL.md",
+      "computedHash": "8da737b02d1d96226a3e4ddfbcfbd25211a750279fdc10ff202a257ccbbf2c9a"
+    },
+    "idea-refine": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/idea-refine/SKILL.md",
+      "computedHash": "a0d312496bd9267af9e76499c3d493df41ecd933f118511773c2789a77c5e681"
+    },
+    "incremental-implementation": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/incremental-implementation/SKILL.md",
+      "computedHash": "48c4b3d1b17ddc6dfed75cb455d6bcc9036018b7d916c0f1836628ae79ae7daa"
+    },
+    "observability-and-instrumentation": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/observability-and-instrumentation/SKILL.md",
+      "computedHash": "ae5ddba4019fc5057796bf022e5fd348cbb88376a3a5f39debf8380789e4601d"
+    },
+    "pdf": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/pdf/SKILL.md",
+      "computedHash": "37226d4220d844377e6b2a386c51a011df4cd130855ff0b80bcc22f9c28abd57"
+    },
+    "performance-optimization": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/performance-optimization/SKILL.md",
+      "computedHash": "5ba8e606f382151f70fc43d408d091180ccc01805e2ebaa5e1cfa1a352ab5eb7"
+    },
+    "planning-and-task-breakdown": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/planning-and-task-breakdown/SKILL.md",
+      "computedHash": "760b881a6566bd56af916ce3380436fb636e276bdbe0a89d335c09b88a49529e"
+    },
+    "pptx": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/pptx/SKILL.md",
+      "computedHash": "d6198c2f85d5d1c737d451b98ebacc3bbc187730c9a79252aa738ddb8d818455"
+    },
+    "receiving-code-review": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/receiving-code-review/SKILL.md",
+      "computedHash": "57e6826e98dc3d2b9e6f58b10d6afc6615898f9c8dc9ee92396cda9c727696b7"
+    },
+    "requesting-code-review": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/requesting-code-review/SKILL.md",
+      "computedHash": "45749f0e2a8fe93c3bd3aa174b04a74880cfc473483d9ee5b7e543e5c189433d"
+    },
+    "security-and-hardening": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/security-and-hardening/SKILL.md",
+      "computedHash": "4a59abc1eda175b159692690222f3c24e9e3f7452ee289bb89375ba63db6630f"
+    },
+    "shipping-and-launch": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/shipping-and-launch/SKILL.md",
+      "computedHash": "f4a86ad75ffb5f43b172c89fd10322aba9fa3bb9ecfa89ff66cb1030ac1ec67d"
+    },
+    "skill-creator": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/skill-creator/SKILL.md",
+      "computedHash": "7e3c9cd74e9e2b4828527a857170e86310f2dab5ea8030a9043df2c7e6c88857"
+    },
+    "source-driven-development": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/source-driven-development/SKILL.md",
+      "computedHash": "c8af82fc8af511521f7881fecd312752c14af3081e933388414e1c5da108d2fe"
+    },
+    "spec-driven-development": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/spec-driven-development/SKILL.md",
+      "computedHash": "ad4ef7a7077b48336bbebb6236a92d442e2abbc434d88592c2f945f6eda8e878"
+    },
+    "subagent-driven-development": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/subagent-driven-development/SKILL.md",
+      "computedHash": "1ae4e6d3e2e61ba14445ad525b075990a48b8e7fb3528b85376e5d448c8bb0d8"
+    },
+    "systematic-debugging": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/systematic-debugging/SKILL.md",
+      "computedHash": "3c9d758cb2ec805ccf3e4ff09a71b3a257e5c16aac80a6bbbaeff247d88f2f18"
+    },
+    "test-driven-development": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/test-driven-development/SKILL.md",
+      "computedHash": "0a7782f203903d5747356f1c11c643159eb60e35c3d4b62b182b6802963da1a1"
+    },
+    "using-agent-skills": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/using-agent-skills/SKILL.md",
+      "computedHash": "138a6713d68f0d752928ecb6b5594404448d15d83a6510fc873b1703e0af2683"
+    },
+    "using-git-worktrees": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/using-git-worktrees/SKILL.md",
+      "computedHash": "256299466f15bf654b9c878d1a1d7150a87a071c78ca6a2fbd6b3bb28fd50337"
+    },
+    "using-superpowers": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/using-superpowers/SKILL.md",
+      "computedHash": "0c1a28a2eb8d549035c1190e6d7b605dfa59d0f0e9ec45bc56612b936cfda2f6"
+    },
+    "verification-before-completion": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/verification-before-completion/SKILL.md",
+      "computedHash": "a601754d7bc96487b23101f2ed669e71df6468f6a005fa17d615f45e17d385c7"
+    },
+    "writing-plans": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/writing-plans/SKILL.md",
+      "computedHash": "0c2fce521d8c330b4ec20a2cca5dff404b09cf1ceff49207759d5a26766bf9d3"
+    },
+    "writing-skills": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/writing-skills/SKILL.md",
+      "computedHash": "e1cb9b675d61545862f9f481a170a7ad83eec1aa42fd4bee884324afb613d64f"
+    },
+    "xlsx": {
+      "source": "dchumari/goto-skills",
+      "sourceType": "github",
+      "skillPath": "skills/general/xlsx/SKILL.md",
+      "computedHash": "cbaaabead69c5e03643f116cde6a396ad53f6da058da6eaa7bad6c4fbafe6026"
+    }
+  }
+}
