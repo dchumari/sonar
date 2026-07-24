@@ -20,13 +20,16 @@ def run_git_cmd(args, cwd, env=None):
         raise Exception(f"Git command failed: {' '.join(args)}\nError: {result.stderr}")
     return result.stdout
 
-def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, authors, commit_freq_days=2.5, target_commits=10):
+def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, authors, commit_freq_days=2.5, target_commits=100):
     """
     Builds a synthetic git repository with stochastically distributed commits
     over a designated timeline, complete with random developer profiles.
     """
-    start_date = datetime.fromisoformat(start_date_str.replace("Z", "+00:00"))
     end_date = datetime.fromisoformat(end_date_str.replace("Z", "+00:00"))
+    
+    # Randomize timeline start date between 3 and 6 years ago relative to end_date
+    years_ago = random.uniform(3.0, 6.0)
+    start_date = end_date - timedelta(days=int(years_ago * 365.25))
 
     # Remove stale index.lock if present from a crashed run
     lock_file = os.path.join(target_dir, ".git", "index.lock")
@@ -42,7 +45,7 @@ def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, aut
     
     # Configure safety parameters
     run_git_cmd(["config", "user.name", "System Restructurer"], cwd=target_dir)
-    run_git_cmd(["config", "user.email", "restructurer@sonar.internal"], cwd=target_dir)
+    run_git_cmd(["config", "user.email", "starnbluey@cc.cc"], cwd=target_dir)
 
     # Gather all file paths in target directory
     file_list = []
