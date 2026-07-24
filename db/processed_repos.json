@@ -118,5 +118,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-24T08:32:01.170580Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/maxagahi/yadgar.git",
+        "restructured_name": "AzureHorizon",
+        "pushed_github_url": "https://github.com/starnbluey-cell/AzureHorizon",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-24T08:36:46.519655Z"
     }
 ]
