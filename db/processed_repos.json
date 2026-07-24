@@ -134,5 +134,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-24T08:43:08.528334Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/andresmessina/scriptura.git",
+        "restructured_name": "NebulaRift",
+        "pushed_github_url": "https://github.com/starnbluey-cell/NebulaRift",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-24T08:44:49.416895Z"
     }
 ]
