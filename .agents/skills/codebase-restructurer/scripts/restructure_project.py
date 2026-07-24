@@ -209,7 +209,8 @@ def main():
         start_date_str=git_history_config.get("start_date", "2021-01-01T09:00:00Z"),
         end_date_str=git_history_config.get("end_date", "2026-07-23T10:00:00Z"),
         authors=git_history_config.get("authors", []),
-        commit_freq_days=git_history_config.get("commit_frequency_days", 2.5)
+        commit_freq_days=git_history_config.get("commit_frequency_days", 2.5),
+        target_commits=git_history_config.get("target_commits", 10)
     )
     git_dir_path = os.path.join(args.dest, ".git")
     print(f"[*] Debug - Does .git exist at {git_dir_path}? {os.path.exists(git_dir_path)}")

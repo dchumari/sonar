@@ -28,6 +28,7 @@
     "start_date": "2021-01-01T09:00:00Z",
     "end_date": "2026-07-23T10:00:00Z",
     "commit_frequency_days": 2.5,
+    "target_commits": 10,
     "authors": [
       {
         "name": "Marc Barber",

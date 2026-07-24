@@ -20,7 +20,7 @@ def run_git_cmd(args, cwd, env=None):
         raise Exception(f"Git command failed: {' '.join(args)}\nError: {result.stderr}")
     return result.stdout
 
-def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, authors, commit_freq_days=2.5):
+def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, authors, commit_freq_days=2.5, target_commits=10):
     """
     Builds a synthetic git repository with stochastically distributed commits
     over a designated timeline, complete with random developer profiles.
@@ -71,7 +71,7 @@ def generate_synthetic_git_history(target_dir, start_date_str, end_date_str, aut
     ]
 
     # Staging batches
-    chunk_size = max(1, len(file_list) // 10)
+    chunk_size = max(1, len(file_list) // target_commits)
     batches = [file_list[i:i + chunk_size] for i in range(0, len(file_list), chunk_size)]
     num_commits = len(batches)
 
