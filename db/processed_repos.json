@@ -158,5 +158,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-24T11:21:55.330221Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/endurain-project/endurain.git",
+        "restructured_name": "EnduranceTrack",
+        "pushed_github_url": "https://github.com/starnbluey-cell/EnduranceTrack",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-24T11:28:28.964940Z"
     }
 ]
