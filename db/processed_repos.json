@@ -166,5 +166,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-24T11:28:28.964940Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/RandoOne/RAT.git",
+        "restructured_name": "RatAdmin",
+        "pushed_github_url": "https://github.com/starnbluey-cell/RatAdmin",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-24T11:32:12.350204Z"
     }
 ]
