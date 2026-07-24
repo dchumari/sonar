@@ -160,7 +160,7 @@ def main():
 
     # Perform pre-qualification checks
     if not check_qualification(args.src, config):
-        return
+        sys.exit(1)
 
     exclusions = config.get("exclusions", [])
     transformations = config.get("transformations", {})
@@ -210,7 +210,7 @@ def main():
         end_date_str=git_history_config.get("end_date", "2026-07-23T10:00:00Z"),
         authors=git_history_config.get("authors", []),
         commit_freq_days=git_history_config.get("commit_frequency_days", 2.5),
-        target_commits=git_history_config.get("target_commits", 10)
+        target_commits=git_history_config.get("target_commits", 100)
     )
     git_dir_path = os.path.join(args.dest, ".git")
     print(f"[*] Debug - Does .git exist at {git_dir_path}? {os.path.exists(git_dir_path)}")
