@@ -198,5 +198,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T13:38:04.552280Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/nopejs/cognee.git",
+        "restructured_name": "SemanticMind",
+        "pushed_github_url": "https://github.com/starnbluey-cell/SemanticMind",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T13:47:18.085358Z"
     }
 ]
