@@ -334,5 +334,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T23:15:06.963081Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/neunzehnachtneun/PyPSA.git",
+        "restructured_name": "GridEnergy",
+        "pushed_github_url": "https://github.com/starnbluey-cell/GridEnergy",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T23:25:50.692191Z"
     }
 ]
