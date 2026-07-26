@@ -89,3 +89,47 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 1. **Git Preservation**: Ensure you retain the generated `.git` folder when moving or extracting the output ZIP archive to permit subsequent commits and pushes.
 2. **README Verification**: Always review and update the README of newly generated codebases manually in chat sessions to avoid duplicate generic project templates.
+
+---
+
+## Prepared Repositories Registry
+
+<!-- START_PREPARED_REPOS_TABLE -->
+
+| Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
+| :--- | :--- | :--- | :--- | :--- |
+| [pypsmcbor](https://codeberg.org/PAPPSO/pypsmcbor.git) | **ProteoMetric** | `pushed` | 2026-07-26 | [ProteoMetric](https://github.com/starnbluey-cell/ProteoMetric) |
+| [nge_2_re](https://codeberg.org/EVA-zh-Hans/nge_2_re.git) | **VividEngine** | `pushed` | 2026-07-26 | [VividEngine](https://github.com/starnbluey-cell/VividEngine) |
+| [PySIDM](https://codeberg.org/RotemBarnea/PySIDM.git) | **MatterGravity** | `pushed` | 2026-07-26 | [MatterGravity](https://github.com/starnbluey-cell/MatterGravity) |
+| [fayf_processor](https://codeberg.org/pluggpreagar/fayf_processor.git) | **DataWeave** | `pushed` | 2026-07-26 | [DataWeave](https://github.com/starnbluey-cell/DataWeave) |
+| [ss](https://codeberg.org/angelogreco/ss.git) | **TunnelFlow** | `pushed` | 2026-07-26 | [TunnelFlow](https://github.com/starnbluey-cell/TunnelFlow) |
+| [seedsigner](https://codeberg.org/kdmukAI-bot/seedsigner.git) | **ColdSigner** | `pushed` | 2026-07-26 | [ColdSigner](https://github.com/starnbluey-cell/ColdSigner) |
+| [Quant-Nanggroe-AI](https://codeberg.org/Dhaher-Labs/Quant-Nanggroe-AI.git) | **TradeCalculus** | `pushed` | 2026-07-26 | [TradeCalculus](https://github.com/starnbluey-cell/TradeCalculus) |
+| [cognee](https://codeberg.org/nopejs/cognee.git) | **SemanticMind** | `pushed` | 2026-07-26 | [SemanticMind](https://github.com/starnbluey-cell/SemanticMind) |
+| [smol-k8s-lab](https://codeberg.org/open-engineering/smol-k8s-lab.git) | **NanoCluster** | `pushed` | 2026-07-26 | [NanoCluster](https://github.com/starnbluey-cell/NanoCluster) |
+| [gpt4free](https://codeberg.org/gpt4free-mirror/gpt4free.git) | **FreeAiGateway** | `pushed` | 2026-07-24 | [FreeAiGateway](https://github.com/starnbluey-cell/FreeAiGateway) |
+| [gallery-dl](https://codeberg.org/mikf/gallery-dl.git) | **MediaGrabber** | `pushed` | 2026-07-24 | [MediaGrabber](https://github.com/starnbluey-cell/MediaGrabber) |
+| [RAT](https://codeberg.org/RandoOne/RAT.git) | **RatAdmin** | `pushed` | 2026-07-24 | [RatAdmin](https://github.com/starnbluey-cell/RatAdmin) |
+| [endurain](https://codeberg.org/endurain-project/endurain.git) | **EnduranceTrack** | `pushed` | 2026-07-24 | [EnduranceTrack](https://github.com/starnbluey-cell/EnduranceTrack) |
+| [origin-axiom](https://codeberg.org/originaxiom/origin-axiom.git) | **AxiomEngine** | `pushed` | 2026-07-24 | [AxiomEngine](https://github.com/starnbluey-cell/AxiomEngine) |
+| [gradlew.py](https://codeberg.org/IzzyOnDroid/gradlew.py.git) | **SilentDrift** | `processed` | 2026-07-24 | N/A |
+| [scriptura](https://codeberg.org/andresmessina/scriptura.git) | **NebulaRift** | `pushed` | 2026-07-24 | [NebulaRift](https://github.com/starnbluey-cell/NebulaRift) |
+| [LotansTomb](https://codeberg.org/mc776/LotansTomb) | **NebulaCrypt** | `pushed` | 2026-07-24 | [NebulaCrypt](https://github.com/starnbluey-cell/NebulaCrypt) |
+| [yadgar](https://codeberg.org/maxagahi/yadgar.git) | **AzureHorizon** | `pushed` | 2026-07-24 | [AzureHorizon](https://github.com/starnbluey-cell/AzureHorizon) |
+| [rope-language-server](https://codeberg.org/mcepl/rope-language-server.git) | **StormSummit** | `pushed` | 2026-07-24 | [StormSummit](https://github.com/starnbluey-cell/StormSummit) |
+| [Ralph-Workflow](https://codeberg.org/RalphWorkflow/Ralph-Workflow.git) | **SolarRift** | `pushed` | 2026-07-24 | [SolarRift](https://github.com/starnbluey-cell/SolarRift) |
+| [opendesk-edu](https://codeberg.org/opendesk-edu/opendesk-edu.git) | **EchoSaber** | `pushed` | 2026-07-24 | [EchoSaber](https://github.com/starnbluey-cell/EchoSaber) |
+| [matridge](https://codeberg.org/slidge/matridge.git) | **QuantumCanyon** | `pushed` | 2026-07-24 | [QuantumCanyon](https://github.com/starnbluey-cell/QuantumCanyon) |
+| [home-assistant-chart](https://codeberg.org/open-engineering/home-assistant-chart.git) | **SilentRift** | `processed` | 2026-07-24 | N/A |
+| [siun](https://codeberg.org/lokimotive/siun.git) | **QuantumHaven** | `pushed` | 2026-07-24 | [QuantumHaven](https://github.com/starnbluey-cell/QuantumHaven) |
+| [torii-hdl](https://codeberg.org/shrine-maiden-heavy-industries/torii-hdl.git) | **SpectralSaber** | `pushed` | 2026-07-24 | [SpectralSaber](https://github.com/starnbluey-cell/SpectralSaber) |
+| [relysam](https://codeberg.org/0ai/relysam.git) | **QuantumSentinel** | `pushed` | 2026-07-24 | [QuantumSentinel](https://github.com/starnbluey-cell/QuantumSentinel) |
+| [portage](https://codeberg.org/gentoo/portage.git) | **AzureNova** | `pushed` | 2026-07-24 | [AzureNova](https://github.com/starnbluey-cell/AzureNova) |
+| [hypergumbo](https://codeberg.org/iterabloom/hypergumbo.git) | **VoidSaber** | `pushed` | 2026-07-24 | [VoidSaber](https://github.com/starnbluey-cell/VoidSaber) |
+| [phederation](https://codeberg.org/feldie/phederation.git) | **SolarHaven** | `pushed` | 2026-07-24 | [SolarHaven](https://github.com/starnbluey-cell/SolarHaven) |
+| [freeipa](https://codeberg.org/freeipa/freeipa.git) | **NebulaVortex** | `pushed` | 2026-07-23 | [NebulaVortex](https://github.com/starnbluey-cell/NebulaVortex) |
+| mock_src | **CyberHorizon** | `processed` | 2026-07-23 | N/A |
+| [pushtunes](https://codeberg.org/psy-q/pushtunes.git) | **SilverDrift** | `pushed` | 2026-07-23 | [SilverDrift](https://github.com/starnbluey-cell/SilverDrift) |
+| [Censor](https://codeberg.org/censor/Censor.git) | **SpectralHaven** | `processed` | 2026-07-23 | N/A |
+
+<!-- END_PREPARED_REPOS_TABLE -->

@@ -270,6 +270,59 @@ def create_zip_archive(dest_dir, project_name, dest_parent):
         print(f"[!] Warning: Failed to create ZIP archive: {e}")
         return None
 
+def update_readme_table(db_path="db/processed_repos.json", readme_path="README.md"):
+    if not os.path.exists(db_path) or not os.path.exists(readme_path):
+        return
+    try:
+        with open(db_path, "r", encoding="utf-8") as f:
+            db = json.load(f)
+        
+        # Sort entries by timestamp descending
+        db_sorted = sorted(db, key=lambda x: x.get("timestamp", ""), reverse=True)
+        
+        headers = ["Original Repository Name", "Unique Destination Name", "Status", "Timestamp", "GitHub Target Repo"]
+        table_lines = [
+            "| " + " | ".join(headers) + " |",
+            "| " + " | ".join([":---"] * len(headers)) + " |"
+        ]
+        
+        for entry in db_sorted:
+            orig_url = entry.get("codeberg_url", "")
+            orig_name = orig_url.split("/")[-1].replace(".git", "") if "/" in orig_url else orig_url
+            dest_name = entry.get("restructured_name", "")
+            status = entry.get("status", "")
+            timestamp = entry.get("timestamp", "")[:10] if entry.get("timestamp") else ""
+            github_url = entry.get("pushed_github_url")
+            
+            github_link = f"[{dest_name}]({github_url})" if github_url else "N/A"
+            codeberg_link = f"[{orig_name}]({orig_url})" if orig_url.startswith("http") else orig_name
+            
+            line = f"| {codeberg_link} | **{dest_name}** | `{status}` | {timestamp} | {github_link} |"
+            table_lines.append(line)
+            
+        table_content = "\n".join(table_lines) + "\n"
+        
+        with open(readme_path, "r", encoding="utf-8") as f:
+            readme = f.read()
+            
+        start_tag = "<!-- START_PREPARED_REPOS_TABLE -->"
+        end_tag = "<!-- END_PREPARED_REPOS_TABLE -->"
+        
+        start_idx = readme.find(start_tag)
+        end_idx = readme.find(end_tag)
+        
+        if start_idx != -1 and end_idx != -1:
+            new_readme = (
+                readme[:start_idx + len(start_tag)] + 
+                "\n\n" + table_content + "\n" + 
+                readme[end_idx:]
+            )
+            with open(readme_path, "w", encoding="utf-8") as f:
+                f.write(new_readme)
+            print("[+] Local README.md registry table updated.")
+    except Exception as e:
+        print(f"[!] Warning: Failed to update README registry table: {e}")
+
 def main():
     parser = argparse.ArgumentParser(description="Sonar Unified Restructuring CLI Orchestrator")
     parser.add_argument("--src", required=True, help="Path to source codebase to restructure")
@@ -282,6 +335,7 @@ def main():
     auto_pull_db()
     creds = load_credentials()
     db = load_db()
+    update_readme_table()
     
     # 2. Check for duplicate repository in DB
     source_git_url = ""

@@ -60,6 +60,50 @@ jobs:
                   json.dump(db, f, indent=4)
               
               print("Database updated successfully.")
+
+              # Regenerate table in README.md
+              readme_path = "README.md"
+              if os.path.exists(readme_path):
+                  db_sorted = sorted(db, key=lambda x: x.get("timestamp", ""), reverse=True)
+                  headers = ["Original Repository Name", "Unique Destination Name", "Status", "Timestamp", "GitHub Target Repo"]
+                  table_lines = [
+                      "| " + " | ".join(headers) + " |",
+                      "| " + " | ".join([":---"] * len(headers)) + " |"
+                  ]
+                  for entry in db_sorted:
+                      orig_url = entry.get("codeberg_url", "")
+                      orig_name = orig_url.split("/")[-1].replace(".git", "") if "/" in orig_url else orig_url
+                      dest_name = entry.get("restructured_name", "")
+                      status = entry.get("status", "")
+                      timestamp = entry.get("timestamp", "")[:10] if entry.get("timestamp") else ""
+                      github_url = entry.get("pushed_github_url")
+                      
+                      github_link = f"[{dest_name}]({github_url})" if github_url else "N/A"
+                      codeberg_link = f"[{orig_name}]({orig_url})" if orig_url.startswith("http") else orig_name
+                      
+                      line = f"| {codeberg_link} | **{dest_name}** | `{status}` | {timestamp} | {github_link} |"
+                      table_lines.append(line)
+                  
+                  table_content = "\n".join(table_lines) + "\n"
+                  
+                  with open(readme_path, "r", encoding="utf-8") as f:
+                      readme = f.read()
+                      
+                  start_tag = "<!-- START_PREPARED_REPOS_TABLE -->"
+                  end_tag = "<!-- END_PREPARED_REPOS_TABLE -->"
+                  
+                  start_idx = readme.find(start_tag)
+                  end_idx = readme.find(end_tag)
+                  
+                  if start_idx != -1 and end_idx != -1:
+                      new_readme = (
+                          readme[:start_idx + len(start_tag)] + 
+                          "\n\n" + table_content + "\n" + 
+                          readme[end_idx:]
+                      )
+                      with open(readme_path, "w", encoding="utf-8") as f:
+                          f.write(new_readme)
+                      print("README.md table updated successfully.")
           except Exception as e:
               print(f"Error updating database: {e}")
               sys.exit(1)
@@ -69,7 +113,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add db/processed_repos.json
+          git add db/processed_repos.json README.md
           git commit -m "db: auto-update processed repositories from issue #${{ github.event.issue.number }}"
           git push origin master || git push origin main
 
