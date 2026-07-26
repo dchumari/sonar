@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [created_with_eee](https://codeberg.org/EEE-project/created_with_eee.git) | **AuraCanvas** | `pushed` | 2026-07-26 | [AuraCanvas](https://github.com/starnbluey-cell/AuraCanvas) |
 | [pypsmcbor](https://codeberg.org/PAPPSO/pypsmcbor.git) | **ProteoMetric** | `pushed` | 2026-07-26 | [ProteoMetric](https://github.com/starnbluey-cell/ProteoMetric) |
 | [nge_2_re](https://codeberg.org/EVA-zh-Hans/nge_2_re.git) | **VividEngine** | `pushed` | 2026-07-26 | [VividEngine](https://github.com/starnbluey-cell/VividEngine) |
 | [PySIDM](https://codeberg.org/RotemBarnea/PySIDM.git) | **MatterGravity** | `pushed` | 2026-07-26 | [MatterGravity](https://github.com/starnbluey-cell/MatterGravity) |

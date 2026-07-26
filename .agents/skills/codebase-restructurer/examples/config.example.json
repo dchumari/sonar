@@ -20,7 +20,7 @@
     "__pycache__"
   ],
   "qualification": {
-    "min_loc": 100000,
+    "min_loc": 2000,
     "min_commits": 100,
     "scan_secrets": true
   },

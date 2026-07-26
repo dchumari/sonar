@@ -14,8 +14,14 @@ def run_git_cmd(args, cwd, env=None):
     if env:
         clean_env.update(env)
 
-    result = subprocess.run(["git"] + args, cwd=cwd, env=clean_env, capture_output=True, text=True)
-    print(f"[Git Debug] cmd: git {' '.join(args)} | code: {result.returncode} | out: {result.stdout.strip()} | err: {result.stderr.strip()}")
+    result = subprocess.run(["git"] + args, cwd=cwd, env=clean_env, capture_output=True, encoding='utf-8', errors='ignore')
+    try:
+        print(f"[Git Debug] cmd: git {' '.join(args)} | code: {result.returncode} | out: {result.stdout.strip()} | err: {result.stderr.strip()}")
+    except UnicodeEncodeError:
+        safe_args = [a.encode('ascii', errors='backslashreplace').decode('ascii') for a in args]
+        safe_out = result.stdout.encode('ascii', errors='backslashreplace').decode('ascii')
+        safe_err = result.stderr.encode('ascii', errors='backslashreplace').decode('ascii')
+        print(f"[Git Debug] cmd: git {' '.join(safe_args)} | code: {result.returncode} | out: {safe_out.strip()} | err: {safe_err.strip()}")
     if result.returncode != 0:
         raise Exception(f"Git command failed: {' '.join(args)}\nError: {result.stderr}")
     return result.stdout
