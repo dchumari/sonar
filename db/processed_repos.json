@@ -318,5 +318,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T22:48:42.098698Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/karrot/karrot-backend.git",
+        "restructured_name": "KarrotCore",
+        "pushed_github_url": "https://github.com/starnbluey-cell/KarrotCore",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T23:03:00.530888Z"
     }
 ]
