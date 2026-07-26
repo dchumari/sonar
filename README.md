@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [ansible](https://codeberg.org/asaramet/ansible.git) | **DeployAutomation** | `pushed` | 2026-07-26 | [DeployAutomation](https://github.com/starnbluey-cell/DeployAutomation) |
 | [PyPSA](https://codeberg.org/neunzehnachtneun/PyPSA.git) | **GridEnergy** | `pushed` | 2026-07-26 | [GridEnergy](https://github.com/starnbluey-cell/GridEnergy) |
 | [stack-harness](https://codeberg.org/myoungjin/stack-harness.git) | **HarnessStack** | `pushed` | 2026-07-26 | [HarnessStack](https://github.com/starnbluey-cell/HarnessStack) |
 | [karrot-backend](https://codeberg.org/karrot/karrot-backend.git) | **KarrotCore** | `pushed` | 2026-07-26 | [KarrotCore](https://github.com/starnbluey-cell/KarrotCore) |
