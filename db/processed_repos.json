@@ -230,5 +230,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T13:58:56.482815Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/pluggpreagar/fayf_processor.git",
+        "restructured_name": "DataWeave",
+        "pushed_github_url": "https://github.com/starnbluey-cell/DataWeave",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T14:01:36.567658Z"
     }
 ]
