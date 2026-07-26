@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [PhoenixAdult](https://codeberg.org/PhoenixAdultProvider/PhoenixAdult.git) | **PhoenixPortal** | `pushed` | 2026-07-26 | [PhoenixPortal](https://github.com/starnbluey-cell/PhoenixPortal) |
 | [FoxDot-ce](https://codeberg.org/FoxDot-community/FoxDot-ce.git) | **SonicSynth** | `pushed` | 2026-07-26 | [SonicSynth](https://github.com/starnbluey-cell/SonicSynth) |
 | [LSaO-visualizer](https://codeberg.org/aaronfbianchi/LSaO-visualizer.git) | **SpaceVisualizer** | `pushed` | 2026-07-26 | [SpaceVisualizer](https://github.com/starnbluey-cell/SpaceVisualizer) |
 | [created_with_eee](https://codeberg.org/EEE-project/created_with_eee.git) | **AuraCanvas** | `pushed` | 2026-07-26 | [AuraCanvas](https://github.com/starnbluey-cell/AuraCanvas) |
