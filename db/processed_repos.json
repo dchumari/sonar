@@ -302,5 +302,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T22:30:42.503344Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/doobidoo/mcp-memory-service.git",
+        "restructured_name": "CogniMem",
+        "pushed_github_url": "https://github.com/starnbluey-cell/CogniMem",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T22:45:35.810417Z"
     }
 ]
