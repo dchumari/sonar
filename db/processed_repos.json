@@ -214,5 +214,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T13:54:27.124618Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/kdmukAI-bot/seedsigner.git",
+        "restructured_name": "ColdSigner",
+        "pushed_github_url": "https://github.com/starnbluey-cell/ColdSigner",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T13:57:05.566846Z"
     }
 ]
