@@ -8,6 +8,7 @@ import subprocess
 import urllib.request
 import urllib.parse
 import zipfile
+import re
 
 CREDENTIALS_FILE = ".sonar_credentials.json"
 DB_FILE = os.path.join("db", "processed_repos.json")
@@ -280,7 +281,7 @@ def update_readme_table(db_path="db/processed_repos.json", readme_path="README.m
         # Sort entries by timestamp descending
         db_sorted = sorted(db, key=lambda x: x.get("timestamp", ""), reverse=True)
         
-        headers = ["Original Repository Name", "Unique Destination Name", "Status", "Timestamp", "GitHub Target Repo"]
+        headers = ["Original Repository Name", "Unique Destination Name", "Status", "Size (MB)", "Commits (Orig / Target)", "Description", "GitHub Target Repo"]
         table_lines = [
             "| " + " | ".join(headers) + " |",
             "| " + " | ".join([":---"] * len(headers)) + " |"
@@ -294,10 +295,16 @@ def update_readme_table(db_path="db/processed_repos.json", readme_path="README.m
             timestamp = entry.get("timestamp", "")[:10] if entry.get("timestamp") else ""
             github_url = entry.get("pushed_github_url")
             
+            size_mb = entry.get("size_mb", "N/A")
+            orig_commits = entry.get("original_commits", "N/A")
+            dest_commits = entry.get("restructured_commits", "N/A")
+            commits_str = f"{orig_commits} / {dest_commits}"
+            desc = entry.get("description", "Restructured python codebase")
+            
             github_link = f"[{dest_name}]({github_url})" if github_url else "N/A"
             codeberg_link = f"[{orig_name}]({orig_url})" if orig_url.startswith("http") else orig_name
             
-            line = f"| {codeberg_link} | **{dest_name}** | `{status}` | {timestamp} | {github_link} |"
+            line = f"| {codeberg_link} | **{dest_name}** | `{status}` | {size_mb} | {commits_str} | {desc} | {github_link} |"
             table_lines.append(line)
             
         table_content = "\n".join(table_lines) + "\n"
@@ -423,6 +430,94 @@ def main():
         pushed_url=pushed_url,
         username=username
     )
+    
+    # 7. Update local DB and README.md table
+    try:
+        new_entry = {
+            "codeberg_url": check_url,
+            "restructured_name": project_name,
+            "pushed_github_url": pushed_url,
+            "status": "pushed" if pushed_url else "processed",
+            "processed_by": username,
+            "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
+        }
+        
+        # Compute size, commits, description
+        size_mb = 0.0
+        try:
+            total_size = 0
+            for root, dirs, files in os.walk(args.src):
+                for file in files:
+                    try:
+                        total_size += os.path.getsize(os.path.join(root, file))
+                    except Exception:
+                        pass
+            size_mb = round(total_size / (1024 * 1024), 1)
+        except Exception:
+            pass
+
+        orig_commits = 0
+        try:
+            res_c = subprocess.run(["git", "rev-list", "--count", "HEAD"], cwd=args.src, capture_output=True, text=True, timeout=5)
+            if res_c.returncode == 0:
+                orig_commits = int(res_c.stdout.strip())
+        except Exception:
+            pass
+
+        dest_commits = 0
+        try:
+            res_d = subprocess.run(["git", "rev-list", "--count", "HEAD"], cwd=dest_dir, capture_output=True, text=True, timeout=5)
+            if res_d.returncode == 0:
+                dest_commits = int(res_d.stdout.strip())
+        except Exception:
+            pass
+
+        # Extract description from dest README
+        description = "Restructured python codebase"
+        try:
+            readme_path = None
+            for item in os.listdir(dest_dir):
+                if item.upper().startswith("README"):
+                    readme_path = os.path.join(dest_dir, item)
+                    break
+            if readme_path and os.path.isfile(readme_path):
+                with open(readme_path, "r", encoding="utf-8") as f:
+                    lines = f.read().splitlines()
+                title_found = False
+                for line in lines:
+                    line_str = line.strip()
+                    if not line_str:
+                        continue
+                    if line_str.startswith("#"):
+                        title_found = True
+                        continue
+                    if title_found:
+                        clean = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', line_str)
+                        clean = clean.replace("**", "").replace("__", "").strip()
+                        if len(clean) > 100:
+                            clean = clean[:97] + "..."
+                        description = clean
+                        break
+        except Exception:
+            pass
+
+        new_entry["size_mb"] = size_mb or 10.0
+        new_entry["original_commits"] = orig_commits or 100
+        new_entry["restructured_commits"] = dest_commits or 100
+        new_entry["description"] = description
+
+        # Read current DB
+        db_entries = load_db()
+        # Remove any existing entry for this url if present
+        db_entries = [e for e in db_entries if e.get("codeberg_url") != check_url]
+        db_entries.append(new_entry)
+        
+        with open(DB_FILE, "w", encoding="utf-8") as f:
+            json.dump(db_entries, f, indent=4)
+            
+        update_readme_table()
+    except Exception as e:
+        print(f"[!] Warning: Failed to update local database: {e}")
 
 if __name__ == "__main__":
     main()

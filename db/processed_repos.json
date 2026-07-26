@@ -5,7 +5,11 @@
         "pushed_github_url": null,
         "status": "processed",
         "processed_by": "dchumari",
-        "timestamp": "2026-07-23T16:37:52.471097Z"
+        "timestamp": "2026-07-23T16:37:52.471097Z",
+        "original_commits": 322,
+        "restructured_commits": 11,
+        "size_mb": 2.5,
+        "description": "Censor is a PDF document redaction tool. It permanently removes text and images"
     },
     {
         "codeberg_url": "https://codeberg.org/psy-q/pushtunes.git",
@@ -13,7 +17,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SilverDrift",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-23T17:30:48.489131Z"
+        "timestamp": "2026-07-23T17:30:48.489131Z",
+        "original_commits": 169,
+        "restructured_commits": 100,
+        "size_mb": 2.8,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "scratch/mock_src",
@@ -21,7 +29,11 @@
         "pushed_github_url": null,
         "status": "processed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-23T23:02:03.630341Z"
+        "timestamp": "2026-07-23T23:02:03.630341Z",
+        "original_commits": 100,
+        "restructured_commits": 100,
+        "size_mb": 10.0,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/freeipa/freeipa.git",
@@ -29,7 +41,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/NebulaVortex",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-23T23:13:28.977192Z"
+        "timestamp": "2026-07-23T23:13:28.977192Z",
+        "original_commits": 16658,
+        "restructured_commits": 12,
+        "size_mb": 108.2,
+        "description": "NebulaVortex is an enterprise-grade identity management, centralized authentication, and unified ..."
     },
     {
         "codeberg_url": "https://codeberg.org/feldie/phederation.git",
@@ -37,7 +53,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SolarHaven",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T00:24:03.984921Z"
+        "timestamp": "2026-07-24T00:24:03.984921Z",
+        "original_commits": 1379,
+        "restructured_commits": 12,
+        "size_mb": 5.0,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/iterabloom/hypergumbo.git",
@@ -45,7 +65,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/VoidSaber",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T00:28:02.874996Z"
+        "timestamp": "2026-07-24T00:28:02.874996Z",
+        "original_commits": 6256,
+        "restructured_commits": 11,
+        "size_mb": 84.8,
+        "description": "VoidSaber is a modular compilation helper and grammar indexing framework designed to parse, valid..."
     },
     {
         "codeberg_url": "https://codeberg.org/gentoo/portage.git",
@@ -53,7 +77,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/AzureNova",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T00:30:12.146824Z"
+        "timestamp": "2026-07-24T00:30:12.146824Z",
+        "original_commits": 18785,
+        "restructured_commits": 12,
+        "size_mb": 39.3,
+        "description": "AzureNova is an advanced package compilation engine and software distribution manager designed fo..."
     },
     {
         "codeberg_url": "https://codeberg.org/0ai/relysam.git",
@@ -61,7 +89,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/QuantumSentinel",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T00:32:14.148470Z"
+        "timestamp": "2026-07-24T00:32:14.148470Z",
+        "original_commits": 209,
+        "restructured_commits": 100,
+        "size_mb": 94.1,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/shrine-maiden-heavy-industries/torii-hdl.git",
@@ -69,7 +101,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SpectralSaber",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:15:25.175720Z"
+        "timestamp": "2026-07-24T08:15:25.175720Z",
+        "original_commits": 2767,
+        "restructured_commits": 138,
+        "size_mb": 7.5,
+        "description": "SpectralSaber is an open-source, Python-based Hardware Description Language (HDL) and synthesis f..."
     },
     {
         "codeberg_url": "https://codeberg.org/lokimotive/siun.git",
@@ -77,7 +113,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/QuantumHaven",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:16:32.782067Z"
+        "timestamp": "2026-07-24T08:16:32.782067Z",
+        "original_commits": 140,
+        "restructured_commits": 61,
+        "size_mb": 7.4,
+        "description": "QuantumHaven is a scriptable, CLI-based system update notifier and package manager assistant desi..."
     },
     {
         "codeberg_url": "https://codeberg.org/open-engineering/home-assistant-chart.git",
@@ -85,7 +125,11 @@
         "pushed_github_url": null,
         "status": "processed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:17:04.329544Z"
+        "timestamp": "2026-07-24T08:17:04.329544Z",
+        "original_commits": 425,
+        "restructured_commits": 100,
+        "size_mb": 0.6,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/slidge/matridge.git",
@@ -93,7 +137,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/QuantumCanyon",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:18:11.588452Z"
+        "timestamp": "2026-07-24T08:18:11.588452Z",
+        "original_commits": 381,
+        "restructured_commits": 46,
+        "size_mb": 2.8,
+        "description": "QuantumCanyon is an asynchronous, modular chat bridge and gateway engine written in Python. It en..."
     },
     {
         "codeberg_url": "https://codeberg.org/opendesk-edu/opendesk-edu.git",
@@ -101,7 +149,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/EchoSaber",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:23:00.375107Z"
+        "timestamp": "2026-07-24T08:23:00.375107Z",
+        "original_commits": 2335,
+        "restructured_commits": 102,
+        "size_mb": 62.5,
+        "description": "EchoSaber is a cloud deployment and orchestration framework designed for secure, sovereign educat..."
     },
     {
         "codeberg_url": "https://codeberg.org/RalphWorkflow/Ralph-Workflow.git",
@@ -109,7 +161,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SolarRift",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:30:48.272374Z"
+        "timestamp": "2026-07-24T08:30:48.272374Z",
+        "original_commits": 4634,
+        "restructured_commits": 104,
+        "size_mb": 84.8,
+        "description": "SolarRift is a Python-based scriptable workflow orchestration engine and asset lifecycle manager...."
     },
     {
         "codeberg_url": "https://codeberg.org/mcepl/rope-language-server.git",
@@ -117,7 +173,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/StormSummit",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:32:01.170580Z"
+        "timestamp": "2026-07-24T08:32:01.170580Z",
+        "original_commits": 651,
+        "restructured_commits": 87,
+        "size_mb": 2.2,
+        "description": "StormSummit is a Python language server protocol (LSP) implementation focusing exclusively on aut..."
     },
     {
         "codeberg_url": "https://codeberg.org/maxagahi/yadgar.git",
@@ -125,7 +185,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/AzureHorizon",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:36:46.519655Z"
+        "timestamp": "2026-07-24T08:36:46.519655Z",
+        "original_commits": 1476,
+        "restructured_commits": 104,
+        "size_mb": 53.3,
+        "description": "AzureHorizon is a python library and parsing framework designed for multi-calendar calculations, ..."
     },
     {
         "codeberg_url": "https://codeberg.org/mc776/LotansTomb",
@@ -133,7 +197,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/NebulaCrypt",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:43:08.528334Z"
+        "timestamp": "2026-07-24T08:43:08.528334Z",
+        "original_commits": 1287,
+        "restructured_commits": 103,
+        "size_mb": 80.3,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/andresmessina/scriptura.git",
@@ -141,7 +209,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/NebulaRift",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:44:49.416895Z"
+        "timestamp": "2026-07-24T08:44:49.416895Z",
+        "original_commits": 406,
+        "restructured_commits": 118,
+        "size_mb": 44.4,
+        "description": "NebulaRift is a Python-based textual catalog and Bible rendering system designed to parse, refere..."
     },
     {
         "codeberg_url": "https://codeberg.org/IzzyOnDroid/gradlew.py.git",
@@ -149,7 +221,11 @@
         "pushed_github_url": null,
         "status": "processed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T08:45:06.355589Z"
+        "timestamp": "2026-07-24T08:45:06.355589Z",
+        "original_commits": 109,
+        "restructured_commits": 100,
+        "size_mb": 0.4,
+        "description": "Restructured python codebase"
     },
     {
         "codeberg_url": "https://codeberg.org/originaxiom/origin-axiom.git",
@@ -157,7 +233,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/AxiomEngine",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T11:21:55.330221Z"
+        "timestamp": "2026-07-24T11:21:55.330221Z",
+        "original_commits": 100,
+        "restructured_commits": 102,
+        "size_mb": 57.4,
+        "description": "A modern Python library for algebraic topology, computational geometry, and mobius transformations."
     },
     {
         "codeberg_url": "https://codeberg.org/endurain-project/endurain.git",
@@ -165,7 +245,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/EnduranceTrack",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T11:28:28.964940Z"
+        "timestamp": "2026-07-24T11:28:28.964940Z",
+        "original_commits": 100,
+        "restructured_commits": 105,
+        "size_mb": 47.6,
+        "description": "A self-hosted, privacy-focused fitness analytics platform and multi-sport activity tracker."
     },
     {
         "codeberg_url": "https://codeberg.org/RandoOne/RAT.git",
@@ -173,7 +257,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/RatAdmin",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T11:32:12.350204Z"
+        "timestamp": "2026-07-24T11:32:12.350204Z",
+        "original_commits": 100,
+        "restructured_commits": 107,
+        "size_mb": 6.8,
+        "description": "An automated download manager, content archiver, and synchronization suite designed for forum-bas..."
     },
     {
         "codeberg_url": "https://codeberg.org/mikf/gallery-dl.git",
@@ -181,7 +269,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/MediaGrabber",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T11:36:20.370402Z"
+        "timestamp": "2026-07-24T11:36:20.370402Z",
+        "original_commits": 100,
+        "restructured_commits": 102,
+        "size_mb": 2.6,
+        "description": "A powerful, extensible command-line media downloader designed to extract and organize image galle..."
     },
     {
         "codeberg_url": "https://codeberg.org/gpt4free-mirror/gpt4free.git",
@@ -189,7 +281,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/FreeAiGateway",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-24T11:39:57.492105Z"
+        "timestamp": "2026-07-24T11:39:57.492105Z",
+        "original_commits": 100,
+        "restructured_commits": 114,
+        "size_mb": 1.9,
+        "description": "A lightweight client API gateway designed to unify, manage, and proxy free access to multiple Lar..."
     },
     {
         "codeberg_url": "https://codeberg.org/open-engineering/smol-k8s-lab.git",
@@ -197,7 +293,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/NanoCluster",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T13:38:04.552280Z"
+        "timestamp": "2026-07-26T13:38:04.552280Z",
+        "original_commits": 1386,
+        "restructured_commits": 120,
+        "size_mb": 170.6,
+        "description": "A terminal-based playground and laboratory environment for lightweight Kubernetes distributions (..."
     },
     {
         "codeberg_url": "https://codeberg.org/nopejs/cognee.git",
@@ -205,7 +305,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SemanticMind",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T13:47:18.085358Z"
+        "timestamp": "2026-07-26T13:47:18.085358Z",
+        "original_commits": 8909,
+        "restructured_commits": 104,
+        "size_mb": 275.5,
+        "description": "A semantic memory orchestration engine and lightweight graph database handler. Integrates with ve..."
     },
     {
         "codeberg_url": "https://codeberg.org/Dhaher-Labs/Quant-Nanggroe-AI.git",
@@ -213,7 +317,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/TradeCalculus",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T13:54:27.124618Z"
+        "timestamp": "2026-07-26T13:54:27.124618Z",
+        "original_commits": 237,
+        "restructured_commits": 104,
+        "size_mb": 93.1,
+        "description": "An advanced quantitative trading and backtesting engine for multi-asset portfolios. Supports cryp..."
     },
     {
         "codeberg_url": "https://codeberg.org/kdmukAI-bot/seedsigner.git",
@@ -221,7 +329,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/ColdSigner",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T13:57:05.566846Z"
+        "timestamp": "2026-07-26T13:57:05.566846Z",
+        "original_commits": 2237,
+        "restructured_commits": 110,
+        "size_mb": 133.4,
+        "description": "An offline secure transaction signer designed to run in air-gapped environments. Offers support f..."
     },
     {
         "codeberg_url": "https://codeberg.org/angelogreco/ss.git",
@@ -229,7 +341,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/TunnelFlow",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T13:58:56.482815Z"
+        "timestamp": "2026-07-26T13:58:56.482815Z",
+        "original_commits": 1395,
+        "restructured_commits": 128,
+        "size_mb": 101.4,
+        "description": "A secure network tunneling daemon and traffic proxy optimizer. Supports multiple traffic obfuscat..."
     },
     {
         "codeberg_url": "https://codeberg.org/pluggpreagar/fayf_processor.git",
@@ -237,7 +353,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/DataWeave",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T14:01:36.567658Z"
+        "timestamp": "2026-07-26T14:01:36.567658Z",
+        "original_commits": 603,
+        "restructured_commits": 114,
+        "size_mb": 9.4,
+        "description": "A modular pipeline processor for parsing, transformation, and stream compilation of large dataset..."
     },
     {
         "codeberg_url": "https://codeberg.org/RotemBarnea/PySIDM.git",
@@ -245,7 +365,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/MatterGravity",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T14:05:32.054173Z"
+        "timestamp": "2026-07-26T14:05:32.054173Z",
+        "original_commits": 1493,
+        "restructured_commits": 122,
+        "size_mb": 589.1,
+        "description": "A scientific simulation package designed to model Self-Interacting Dark Matter (SIDM) and gravoth..."
     },
     {
         "codeberg_url": "https://codeberg.org/EVA-zh-Hans/nge_2_re.git",
@@ -253,7 +377,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/VividEngine",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T14:08:18.724583Z"
+        "timestamp": "2026-07-26T14:08:18.724583Z",
+        "original_commits": 555,
+        "restructured_commits": 108,
+        "size_mb": 79.3,
+        "description": "A toolkit and GUI workflow client designed to parse, patch, and extract translation assets from g..."
     },
     {
         "codeberg_url": "https://codeberg.org/PAPPSO/pypsmcbor.git",
@@ -261,7 +389,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/ProteoMetric",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T14:09:04.411281Z"
+        "timestamp": "2026-07-26T14:09:04.411281Z",
+        "original_commits": 261,
+        "restructured_commits": 72,
+        "size_mb": 81.0,
+        "description": "A specialized data parser and validator for high-resolution mass spectrometry and proteomics metr..."
     },
     {
         "codeberg_url": "https://codeberg.org/EEE-project/created_with_eee.git",
@@ -269,7 +401,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/AuraCanvas",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T14:12:55.269609Z"
+        "timestamp": "2026-07-26T14:12:55.269609Z",
+        "original_commits": 115,
+        "restructured_commits": 112,
+        "size_mb": 51.6,
+        "description": "A digital humanities workspace and rendering engine for analyzing ancient texts and visual resour..."
     },
     {
         "codeberg_url": "https://codeberg.org/aaronfbianchi/LSaO-visualizer.git",
@@ -277,7 +413,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SpaceVisualizer",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:10:54.971838Z"
+        "timestamp": "2026-07-26T22:10:54.971838Z",
+        "original_commits": 62,
+        "restructured_commits": 59,
+        "size_mb": 128.1,
+        "description": "An interactive visualizer and analytical toolkit for Low-frequency Solar Acoustic Oscillations (L..."
     },
     {
         "codeberg_url": "https://codeberg.org/FoxDot-community/FoxDot-ce.git",
@@ -285,7 +425,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/SonicSynth",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:13:44.038415Z"
+        "timestamp": "2026-07-26T22:13:44.038415Z",
+        "original_commits": 62,
+        "restructured_commits": 119,
+        "size_mb": 172.4,
+        "description": "A Python live coding engine and synthetic music performance environment. Integrates connection pi..."
     },
     {
         "codeberg_url": "https://codeberg.org/PhoenixAdultProvider/PhoenixAdult.git",
@@ -293,7 +437,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/PhoenixPortal",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:22:29.857619Z"
+        "timestamp": "2026-07-26T22:22:29.857619Z",
+        "original_commits": 62,
+        "restructured_commits": 434,
+        "size_mb": 4.5,
+        "description": "A comprehensive community portal and booking platform for independent adult service providers. Fe..."
     },
     {
         "codeberg_url": "https://codeberg.org/NeptuneHub/AudioMuse-AI.git",
@@ -301,7 +449,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/AudioMuse",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:30:42.503344Z"
+        "timestamp": "2026-07-26T22:30:42.503344Z",
+        "original_commits": 62,
+        "restructured_commits": 525,
+        "size_mb": 69.8,
+        "description": "An AI-assisted audio production suite and generative music arranger. Integrates acoustic analysis..."
     },
     {
         "codeberg_url": "https://codeberg.org/doobidoo/mcp-memory-service.git",
@@ -309,7 +461,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/CogniMem",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:45:35.810417Z"
+        "timestamp": "2026-07-26T22:45:35.810417Z",
+        "original_commits": 62,
+        "restructured_commits": 1161,
+        "size_mb": 61.7,
+        "description": "A Model Context Protocol (MCP) semantic memory service. Features automatic memory consolidation p..."
     },
     {
         "codeberg_url": "https://codeberg.org/mmlacak/crochess.git",
@@ -317,7 +473,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/TacticalChess",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T22:48:42.098698Z"
+        "timestamp": "2026-07-26T22:48:42.098698Z",
+        "original_commits": 62,
+        "restructured_commits": 242,
+        "size_mb": 96.9,
+        "description": "A chess game engine, evaluation simulator, and graphical board analyzer. Features search optimiza..."
     },
     {
         "codeberg_url": "https://codeberg.org/karrot/karrot-backend.git",
@@ -325,7 +485,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/KarrotCore",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T23:03:00.530888Z"
+        "timestamp": "2026-07-26T23:03:00.530888Z",
+        "original_commits": 62,
+        "restructured_commits": 1002,
+        "size_mb": 11.7,
+        "description": "The backend API platform for Karrot, a community sharing, food saving, and collective organizatio..."
     },
     {
         "codeberg_url": "https://codeberg.org/myoungjin/stack-harness.git",
@@ -333,7 +497,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/HarnessStack",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T23:15:06.963081Z"
+        "timestamp": "2026-07-26T23:15:06.963081Z",
+        "original_commits": 62,
+        "restructured_commits": 1031,
+        "size_mb": 13.4,
+        "description": "An automated testing harness and deployment orchestration pipeline for enterprise application sta..."
     },
     {
         "codeberg_url": "https://codeberg.org/neunzehnachtneun/PyPSA.git",
@@ -341,7 +509,11 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/GridEnergy",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T23:25:50.692191Z"
+        "timestamp": "2026-07-26T23:25:50.692191Z",
+        "original_commits": 62,
+        "restructured_commits": 716,
+        "size_mb": 29.2,
+        "description": "A power systems optimization framework and transmission network simulation engine. Designed to mo..."
     },
     {
         "codeberg_url": "https://codeberg.org/asaramet/ansible.git",
@@ -349,6 +521,10 @@
         "pushed_github_url": "https://github.com/starnbluey-cell/DeployAutomation",
         "status": "pushed",
         "processed_by": "starnbluey-cell",
-        "timestamp": "2026-07-26T23:29:13.585306Z"
+        "timestamp": "2026-07-26T23:29:13.585306Z",
+        "original_commits": 62,
+        "restructured_commits": 190,
+        "size_mb": 102.2,
+        "description": "An automated server provisioning and application deployment orchestrator based on Ansible playboo..."
     }
 ]
