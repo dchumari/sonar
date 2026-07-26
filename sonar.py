@@ -275,6 +275,7 @@ def main():
     parser.add_argument("--src", required=True, help="Path to source codebase to restructure")
     parser.add_argument("--dest-parent", help="Parent directory where uniquely named outputs will be saved")
     parser.add_argument("--config", help="Path to restructuring JSON configuration")
+    parser.add_argument("--name", help="Specific custom name to use for the restructured codebase")
     args = parser.parse_args()
 
     # 1. Sync database and load local settings
@@ -303,7 +304,10 @@ def main():
 
     # 3. Resolve destination name & parent dir
     dest_parent = args.dest_parent or creds.get("dest_parent")
-    project_name = generate_unique_name(db, dest_parent)
+    if args.name:
+        project_name = args.name
+    else:
+        project_name = generate_unique_name(db, dest_parent)
     dest_dir = os.path.join(dest_parent, project_name)
     
     print(f"[+] Unique name selected: {project_name}")
