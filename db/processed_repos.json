@@ -310,5 +310,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-26T22:45:35.810417Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/mmlacak/crochess.git",
+        "restructured_name": "TacticalChess",
+        "pushed_github_url": "https://github.com/starnbluey-cell/TacticalChess",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-26T22:48:42.098698Z"
     }
 ]

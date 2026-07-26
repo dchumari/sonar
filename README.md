@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [crochess](https://codeberg.org/mmlacak/crochess.git) | **TacticalChess** | `pushed` | 2026-07-26 | [TacticalChess](https://github.com/starnbluey-cell/TacticalChess) |
 | [mcp-memory-service](https://codeberg.org/doobidoo/mcp-memory-service.git) | **CogniMem** | `pushed` | 2026-07-26 | [CogniMem](https://github.com/starnbluey-cell/CogniMem) |
 | [AudioMuse-AI](https://codeberg.org/NeptuneHub/AudioMuse-AI.git) | **AudioMuse** | `pushed` | 2026-07-26 | [AudioMuse](https://github.com/starnbluey-cell/AudioMuse) |
 | [PhoenixAdult](https://codeberg.org/PhoenixAdultProvider/PhoenixAdult.git) | **PhoenixPortal** | `pushed` | 2026-07-26 | [PhoenixPortal](https://github.com/starnbluey-cell/PhoenixPortal) |
