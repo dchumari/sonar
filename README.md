@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [curl-mirror](https://codeberg.org/curl/curl-mirror.git) | **NetTransfer** | `pushed` | 2026-07-27 | [NetTransfer](https://github.com/starnbluey-cell/NetTransfer) |
 | [noctalia](https://codeberg.org/noctalia-dev/noctalia.git) | **NoctaliaCore** | `pushed` | 2026-07-27 | [NoctaliaCore](https://github.com/starnbluey-cell/NoctaliaCore) |
 | [eden](https://codeberg.org/eden-emu/eden.git) | **EdenEmu** | `pushed` | 2026-07-27 | [EdenEmu](https://github.com/starnbluey-cell/EdenEmu) |
 | [xenia_canary_experimental](https://codeberg.org/thunksuck3r/xenia_canary_experimental.git) | **CoreEmulator** | `pushed` | 2026-07-27 | [CoreEmulator](https://github.com/starnbluey-cell/CoreEmulator) |
