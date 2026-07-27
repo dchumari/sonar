@@ -550,5 +550,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-27T02:28:52.760065Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/noctalia-dev/noctalia.git",
+        "restructured_name": "NoctaliaCore",
+        "pushed_github_url": "https://github.com/starnbluey-cell/NoctaliaCore",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-27T02:34:52.882346Z"
     }
 ]
