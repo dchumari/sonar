@@ -534,5 +534,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-27T01:59:59.163252Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/thunksuck3r/xenia_canary_experimental.git",
+        "restructured_name": "CoreEmulator",
+        "pushed_github_url": "https://github.com/starnbluey-cell/CoreEmulator",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-27T02:04:47.689092Z"
     }
 ]

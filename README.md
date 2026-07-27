@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [xenia_canary_experimental](https://codeberg.org/thunksuck3r/xenia_canary_experimental.git) | **CoreEmulator** | `pushed` | 2026-07-27 | [CoreEmulator](https://github.com/starnbluey-cell/CoreEmulator) |
 | [SaveManager](https://codeberg.org/marco007/SaveManager.git) | **VaultKeeper** | `pushed` | 2026-07-27 | [VaultKeeper](https://github.com/starnbluey-cell/VaultKeeper) |
 | [ansible](https://codeberg.org/asaramet/ansible.git) | **DeployAutomation** | `pushed` | 2026-07-26 | [DeployAutomation](https://github.com/starnbluey-cell/DeployAutomation) |
 | [PyPSA](https://codeberg.org/neunzehnachtneun/PyPSA.git) | **GridEnergy** | `pushed` | 2026-07-26 | [GridEnergy](https://github.com/starnbluey-cell/GridEnergy) |
