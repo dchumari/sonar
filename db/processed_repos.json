@@ -598,5 +598,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-27T03:00:55.248739Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/doug-moen/curv.git",
+        "restructured_name": "CurvModeler",
+        "pushed_github_url": "https://github.com/starnbluey-cell/CurvModeler",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-27T03:11:39.710939Z"
     }
 ]
