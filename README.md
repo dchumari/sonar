@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [OpenRGB](https://codeberg.org/OpenRGB/OpenRGB.git) | **SpectrumLight** | `pushed` | 2026-07-27 | [SpectrumLight](https://github.com/starnbluey-cell/SpectrumLight) |
 | [blankart](https://codeberg.org/NepDisk/blankart.git) | **VividRender** | `pushed` | 2026-07-27 | [VividRender](https://github.com/starnbluey-cell/VividRender) |
 | [C-Menu](https://codeberg.org/BillWaller/C-Menu.git) | **MenuConsole** | `pushed` | 2026-07-27 | [MenuConsole](https://github.com/starnbluey-cell/MenuConsole) |
 | [mkshot](https://codeberg.org/u16/mkshot.git) | **SnapCapture** | `pushed` | 2026-07-27 | [SnapCapture](https://github.com/starnbluey-cell/SnapCapture) |
