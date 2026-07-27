@@ -98,6 +98,7 @@ To process multiple repositories at once, you can run batch scripts located in t
 
 | Original Repository Name | Unique Destination Name | Status | Timestamp | GitHub Target Repo |
 | :--- | :--- | :--- | :--- | :--- |
+| [blended-strawberry](https://codeberg.org/unwanted9855/blended-strawberry.git) | **BerrySynth** | `pushed` | 2026-07-27 | [BerrySynth](https://github.com/starnbluey-cell/BerrySynth) |
 | [openwrt](https://codeberg.org/openwrt/openwrt.git) | **GatewayFirmware** | `pushed` | 2026-07-27 | [GatewayFirmware](https://github.com/starnbluey-cell/GatewayFirmware) |
 | [curv](https://codeberg.org/doug-moen/curv.git) | **CurvModeler** | `pushed` | 2026-07-27 | [CurvModeler](https://github.com/starnbluey-cell/CurvModeler) |
 | [OpenRGB](https://codeberg.org/OpenRGB/OpenRGB.git) | **SpectrumLight** | `pushed` | 2026-07-27 | [SpectrumLight](https://github.com/starnbluey-cell/SpectrumLight) |
