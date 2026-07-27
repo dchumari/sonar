@@ -574,5 +574,13 @@
         "status": "pushed",
         "processed_by": "starnbluey-cell",
         "timestamp": "2026-07-27T02:45:06.600558Z"
+    },
+    {
+        "codeberg_url": "https://codeberg.org/BillWaller/C-Menu.git",
+        "restructured_name": "MenuConsole",
+        "pushed_github_url": "https://github.com/starnbluey-cell/MenuConsole",
+        "status": "pushed",
+        "processed_by": "starnbluey-cell",
+        "timestamp": "2026-07-27T02:48:26.951112Z"
     }
 ]
